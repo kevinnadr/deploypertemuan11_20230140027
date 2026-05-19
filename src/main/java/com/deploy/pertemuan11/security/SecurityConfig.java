@@ -17,19 +17,17 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {
-
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
     @Bean
-    public UserDetailsService userDetailsService(UserRepository userRepository) {
+    public UserDetailsService userDetailsService(UserRepository userRepository){
 
         return username -> {
-
-            com.deploy.pertemuan11.model.User user = userRepository.findByUsername(username)
-                    .orElseThrow(() -> new UsernameNotFoundException("User tidak ditemukan"));
+            com.deploy.pertemuan11.model.User user = userRepository.findByUsername(username).
+                    orElseThrow(() -> new UsernameNotFoundException("User tidak ditemukan"));
 
             return User
                     .withUsername(user.getUsername())
@@ -64,7 +62,6 @@ public class SecurityConfig {
                 .logout(logout -> logout
                         .logoutSuccessUrl("/login")
                 );
-
         return http.build();
     }
 }
