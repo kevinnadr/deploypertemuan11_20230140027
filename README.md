@@ -4,6 +4,11 @@ TAMPILAN HALAMAN LOGIN
 TAMPILAN HALAMAN HOME
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bd0517ce-1807-4a04-90cd-fb725e2b374d" />
 
+
+
+ISI WSL KETIKA BERHASIL DI RUN
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/54838dac-2064-4f26-a9e8-1a10b031046d" />
+
 ISI DATA PADA TABEL
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0b618816-5800-4fed-9408-2fed0586c237" />
 
